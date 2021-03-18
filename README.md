@@ -8,21 +8,22 @@ Write a program that calculates income tax based on the following rules:
 - Any portion of the income that is above $50k is taxed at 30%
 
 ANS:  For the above program 
-   a. First i understood each and every tax_bracket
-   b. And then i looked up to "The Portion of the Income"(Part of the income)
-   c. Learned about how to calculate the  Incremental tax.(Tax calculator)
-   d. Came to conclusion to define a function with conditional logic - (if-else statements)
-   c. Finally invoking the function and stored it in a variable.
-   d. console.log to get the output.
-   e. I executed the file in the terminal without using web browser.
-   f. Running the command node(filename) in the terminal.
+    - First i understood each and every tax_bracket
+    - And then i looked up to "The Portion of the Income"(Part of the income)
+    - Learned about how to calculate the  Incremental tax.(Tax calculator)
+    - Came to conclusion to define a function with conditional logic - (if-else statements)
+    - Finally invoking the function and stored it in a variable.
+    - console.log to get the output.
+    - I executed the file in the terminal without using web browser.
+    - Running the command node(filename) in the terminal.
    
    
   2. Imagine there are actually 50+ brackets that change every year, and we need to compute 1 
     Billion income tax projections every year. 
     Describe in a few bullet points how you’d build a solution that scales.
    
-  ANS: a. From my prespective, hopefully we never have to do anything a billion times on a user's browser
-       b. Assuming hypothetically running in the browser, I would prefer Iterative method, standarad for loop will tend to be 
-       faster, than all other alternatives.
-       c. Putting into the array of objects, .map array method is very efficient way going through massive amount of data.
+  ANS: 
+      - From my prespective, hopefully we never have to do anything a billion times on a user's browser
+      - Assuming hypothetically running in the browser, I would prefer Iterative method, standarad for loop will tend to be 
+        faster, than all other alternatives.
+      - Putting into the array of objects, .map array method is very efficient way going through massive amount of data.
