@@ -13,40 +13,41 @@ let Income1 = 10000
 let Income2 = 20000
 let Income3 = 50000
 
-
+// function declaration 
 function calcTaxes(amount){
-
-    let calculate = 0;
+// Setting it to a initial value
+    let taxcalculate = 0;
+// Conditional loop using if else 
+// whatever value in the parameter, it checks for first condition,if it not applicable
+// move to next condition, and return the result
     if(amount > Income3){
-        tax = (amount -Income3) * .30 + 
+        taxcalculate += (amount -Income3) * .30 + (Income3 - Income2)*.20 + (Income2 - Income1)*.10;
     }
+    else if(amount > Income2){
+        taxcalculate += (amount - Income2) *.20 +  (Income2 - Income1)*.10
+    }
+    else if(amount > Income1){
+        taxcalculate += (amount - Income1) * .10 
+    }
+    return taxcalculate
 }
+// function invoking should always stored in a variable
+// and then console.log
+const output = calcTaxes(90000)
+console.log(output)
+const output1 = calcTaxes(40000)
+console.log(output1)
+const output2 = calcTaxes(7000)
+console.log(output2)
 
-// Google
-var calculate_tax = function() {
-    var total;
-    var income = parseFloat( $("income").value );
 
-    function calcTaxes(amount){
-    var calculate = 0;
-    if(amount > 85650){
-        tax = (amount - 85650) * .28 + 870.0+(35350-8700)*.15+(89350-36900)*.25;
-    }
-    else if( amount > 35350){
-    tax = (amount - 35350) * .25 + 870.0+(35350-8700)*.15;    
-    }
-    else if(amount > 8700){
-    tax = (amount - 8700) * .15 + 870.0;
-    }
-    else{
-       tax = amount * .10;
-        }
-    tax += amount * .153;
-    return tax;
-    /*
-    10% on taxable income from $0 to $8,700, plus
-    15% on taxable income over $8,700 to $35,350, plus
-    25% on taxable income over $35,350 to $85,650, plus
-    */
-}
-}
+// 2.Imagine there are actually 50 + brackets that change every year, and we need to comput 1 billion income
+//  tax projections every year.
+
+// a. From my prespective, hopefully we never have to do anything a billion times on a user's browser 
+// b. Assuming hypothetically running in the browser, I would prefer Iterative method, standarad for loop will tend to be faster, than all other alternatives.
+// c. Putting into the array of objects, .map array method is very efficient way going through massive amount of data.
+
+
+
+
