@@ -22,7 +22,8 @@ ANS:  For the above program
     Billion income tax projections every year. 
     Describe in a few bullet points how you’d build a solution that scales.
    
-  ANS: - From my prespective, hopefully we never have to do anything a billion times on a user's browser
-       - Assuming hypothetically running in the browser, I would prefer Iterative method, standarad for loop will tend to be 
+  ANS: 
+        - From my prespective, hopefully we never have to do anything a billion times on a user's browser
+        - Assuming hypothetically running in the browser, I would prefer Iterative method, standarad for loop will tend to be 
           faster, than all other alternatives.
-       - Putting into the array of objects, .map array method is very efficient way going through massive amount of data.
+        - Putting into the array of objects, .map array method is very efficient way going through massive amount of data.
