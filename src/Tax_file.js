@@ -40,6 +40,8 @@ console.log(output1)
 const output2 = calcTaxes(7000)
 console.log(output2)
 
+// I exceuted the output by running node Tax_file.js in the Terminal without using web browser.
+
 
 // 2.Imagine there are actually 50 + brackets that change every year, and we need to comput 1 billion income
 //  tax projections every year.
