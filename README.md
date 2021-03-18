@@ -1,70 +1,28 @@
-# Getting Started with Create React App
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+        ROOSTIFY - TAKE HOME ASSIGNMENT
+      
+Write a program that calculates income tax based on the following rules:
+- The portion of the income that is less than $10k is untaxed
+- The portion of the income that is less than $20k is taxed at 10%
+- The portion of the income that is less than $50k is taxed at 20%
+- Any portion of the income that is above $50k is taxed at 30%
 
-## Available Scripts
-
-In the project directory, you can run:
-
-### `npm start`
-
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
-
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
-
-### `npm test`
-
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
-### `npm run build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
-
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+ANS:  For the above program 
+   a. First i understood each and every tax_bracket
+   b. And then i looked up to "The Portion of the Income"(Part of the income)
+   c. Learned about how to calculate the  Incremental tax.(Tax calculator)
+   d. Came to conclusion to define a function with conditional logic - (if-else statements)
+   c. Finally invoking the function and stored it in a variable.
+   d. console.log to get the output.
+   e. I executed the file in the terminal without using web browser.
+   f. Running the command node(filename) in the terminal.
+   
+   
+  2. Imagine there are actually 50+ brackets that change every year, and we need to compute 1 
+    Billion income tax projections every year. 
+    Describe in a few bullet points how you’d build a solution that scales.
+   
+  ANS: a. From my prespective, hopefully we never have to do anything a billion times on a user's browser
+       b. Assuming hypothetically running in the browser, I would prefer Iterative method, standarad for loop will tend to be 
+       faster, than all other alternatives.
+       c. Putting into the array of objects, .map array method is very efficient way going through massive amount of data.
