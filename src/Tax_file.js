@@ -14,11 +14,12 @@ let Income2 = 20000
 let Income3 = 50000
 
 // function declaration 
+// passing amount as a parameter
 function calcTaxes(amount){
 // Setting it to a initial value
     let taxcalculate = 0;
 // Conditional loop using if else 
-// whatever value in the parameter, it checks for first condition,if it not applicable
+// whatever value in the parameter, it checks for first condition,if it not applicable,
 // move to next condition, and return the result
     if(amount > Income3){
         taxcalculate += (amount -Income3) * .30 + (Income3 - Income2)*.20 + (Income2 - Income1)*.10;
@@ -29,8 +30,10 @@ function calcTaxes(amount){
     else if(amount > Income1){
         taxcalculate += (amount - Income1) * .10 
     }
+    // we are appending and returning the values to taxcalculate(Initially set to zero)
     return taxcalculate
 }
+
 // function invoking should always stored in a variable
 // and then console.log
 const output = calcTaxes(90000)
